@@ -4,6 +4,8 @@
   border-bottom: 1px rgba(33, 33, 33, 0.4) solid;
 }
 .profile__avatar {
+  width: 190px;
+  height: 190px;
   margin-right: 20px;
   border-radius: 8px;
 }
@@ -12,13 +14,27 @@
   flex-direction: column;
 }
 .profile__name {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 420px;
   margin: 0 0 12px;
-
   font-weight: 500;
   font-size: 32px;
   line-height: 100%;
 }
 .profile__description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 420px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #212121b2;
   margin: 0;
   color: rgba(33, 33, 33, 0.7);
 }
@@ -28,8 +44,6 @@
   background-color: transparent;
   color: #212121;
   gap: 8px;
-  width: 124px;
-  height: 16px;
   border: none;
   opacity: 0.7;
 }
